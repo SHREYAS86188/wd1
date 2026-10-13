@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>Responsive Grid Layout </tittle>
+
+<style>
+    .container{
+     display:grid;
+     grid-temple-0coloums:1fr 1fr;
+     gap:10px;
+    }
+
+    .box{
+      background-color: lightblue;
+      padding:30px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    /*for small screens */
+    @media (max-width:600px){
+        .container{
+          grid-template-columns: 1fr;
+        }
+    }
+    </style>
+    </head>
+
+    <body>
+         <h2>Respective Grid Layout</h2>
+
+         <div clasws="container">
+            <div class="box">coloum 1</div>
+            <div class="box">coloum 2</div>\
+         </div>
+
+
+    </body>
+    </html>
